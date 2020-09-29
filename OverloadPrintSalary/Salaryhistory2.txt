@@ -1,0 +1,2 @@
+Salary of Dirk at 20 is 2000.0
+Maximum salary reached
