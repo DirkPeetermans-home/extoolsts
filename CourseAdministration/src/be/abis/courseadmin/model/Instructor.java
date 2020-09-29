@@ -93,4 +93,9 @@ public class Instructor {
 								
 		}
 		
-	}
+		public void printInstructorData() {
+			System.out.println(firstName + " " + lastName + " " + age );
+		}
+		}
+		
+	

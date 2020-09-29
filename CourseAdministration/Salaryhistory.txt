@@ -1,5 +1,8 @@
-Salary of Sandy at 23 is 2000.0
-Salary of Sandy at 28 is 2060.0
-Salary of Sandy at 33 is 2121.8
-Salary of Sandy at 38 is 2185.454
+Salary of Dirk at 20 is 2000.5
+Salary of Dirk at 25 is 2060.515
+Salary of Dirk at 30 is 2122.33045
+Salary of Dirk at 35 is 2186.0003635
+Salary of Dirk at 40 is 2251.580374405
+Salary of Dirk at 45 is 2319.12778563715
+Salary of Dirk at 50 is 2388.7016192062642
 Maximum salary reached

@@ -8,31 +8,30 @@ import be.abis.courseadmin.model.Instructor;
 public class ExF4 {
 
 	public static void main(String[] args) {
-
-		Course co1 = new Course("Java", 2, 300.0, false);
-		co1.addInstructor("Dirk");
-		co1.addInstructor("Chri");
-		Course co2 = new Course("Python", 3, 300.0, true);
-		co2.addInstructor("Dirk");
-		Course co3 = new Course("Cobol", 6, 300.0, false);
-		co2.addInstructor("Dirk");
-		co2.addInstructor("Tim");
-		co3.setTitle("OOCobol");
-		
-		Instructor i1 = new Instructor("Sandy","Schillebeeckx",42,23,2000.0);
-		
+	
 		
 		//Course[] courses = { co1, co2, co3 };
-		Course[] courses = new Course[] { co1, co2, co3 };
+		//Course[] courses = new Course[] { co1, co2, co3 };
 		
 
 		try {
+			
+			Instructor i1 = new Instructor("Sandy","Schillebeeckx",42,23,2000.0);
 			i1.printSalaryHistory();
-			for (Course c : courses) {
-				System.out.println(c.getTitle() + " costs " + c.calculatePrice());
-				c.printInfo();
-				
-			}
+			
+			Instructor i2 = new Instructor("Dirk","Peetermans",52,20,2000.5);
+			i2.printSalaryHistory();
+			
+			Course c1 = new Course("Oracle",5,1000.5,false);
+			
+			c1.addInstructor(i1);
+			c1.addInstructor(i2);
+			double totalPrice = c1.calculatePrice();
+			c1.printInfo();
+			
+			i1.printInstructorData();
+			
+			
 		}
 
 		catch (IOException e) {

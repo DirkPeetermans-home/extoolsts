@@ -13,8 +13,8 @@ public class Course {
 	private int numberOfDays;
 	private double pricePerDay;
 	private boolean priorKnowledgeRequired;	
-	private List<String> instructors = new ArrayList<String>();
-	
+	private List<Instructor> instructors = new ArrayList<>();
+		
 
 	public Course(String title, int numberOfDays, double pricePerDay, boolean priorKnowledgeRequired) {
 		this.title = title;
@@ -55,19 +55,19 @@ public class Course {
 		this.priorKnowledgeRequired = priorKnowledgeRequired;
 	}
 
-	public List<String> getInstructors() {
+	public List<Instructor> getInstructors() {
 		return instructors;
 	}
 
-	public void setInstructors(List<String> instructors) {
+	public void setInstructors(List<Instructor> instructors) {
 		this.instructors = instructors;
 	}
 
-	public void addInstructor(String instructor) {
+	public void addInstructor(Instructor instructor) {
 		instructors.add(instructor);
 	}
 	
-	public void removeInstructor(String instructor) {
+	public void removeInstructor(Instructor instructor) {
 		instructors.remove(instructor);
 	}
 	
@@ -96,11 +96,15 @@ public class Course {
 
 		bw.write("That price is " + label + "\n");
 		bw.write("There are " + instructors.size() + " instructors for this course:" + "\n");
-		for (String instructor : instructors) {
-			bw.write(instructor + "\n");
-		}
+		bw.write("The instructors are:");
+		   for (Instructor i: instructors){
+			   bw.write("\n"+i.getFirstName() + " " + i.getLastName());
+		   }
 
 		bw.close();
+		
+		
+		
 		System.out.println("info written to courseinfo"+title+".txt");
 	}
 	
