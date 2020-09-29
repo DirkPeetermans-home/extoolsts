@@ -3,5 +3,5 @@ Prior knowledge required: false
 That price is EXPENSIVE
 There are 2 instructors for this course:
 The instructors are:
-Sandy Schillebeeckx
-Dirk Peetermans
+Sandy Schillebeeckx 42
+Dirk Peetermans 52

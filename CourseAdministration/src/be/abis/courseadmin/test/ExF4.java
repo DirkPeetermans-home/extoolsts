@@ -29,7 +29,8 @@ public class ExF4 {
 			double totalPrice = c1.calculatePrice();
 			c1.printInfo();
 			
-			i1.printInstructorData();
+			//i1.printInstructorData();
+			System.out.println(i1);
 			
 			
 		}
